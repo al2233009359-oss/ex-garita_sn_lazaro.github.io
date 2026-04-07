@@ -1,0 +1,79 @@
+.
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: .5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+p {
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    scroll-margin-top: 80px;
+    text-align: justify;
+}
+header {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 👈 centra mejor */
+
+    text-align: center;
+
+    background: linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.6)),
+                url('assets/img/garita1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.panoramica {
+    width: 100%;
+    height: 300px; /* puedes ajustar */
+
+    background-image: url('assets/img/panoramica.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* controla qué tan grande puede ser */
+    margin: auto;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px; /* opcional, se ve más nice */
+}
+.shorts-wrapper {
+    width: 100%;
+    max-width: 400px; /* tamaño tipo móvil */
+    margin: 40px auto;
+}
+
+.shorts-wrapper iframe {
+    width: 100%;
+    height: 700px; /* formato vertical */
+    border-radius: 12px;
+}
+.galeria-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px; 
+}
